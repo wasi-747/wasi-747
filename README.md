@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Wasiur Rahman Sakib — Developer Web Portfolio
 
-## Getting Started
+A high-performance, responsive personal developer portfolio built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed with a Figma-inspired dark theme featuring **Burnt Orange (`#ff8c32`)** and **Warm Amber (`#ffb347`)** accents.
 
-First, run the development server:
+![Portfolio Preview](public/orange_water_splash_circle.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **⚡ Modern Tech Stack**: Next.js 16 App Router, TypeScript, React 19, Tailwind CSS v4, Framer Motion.
+- **🎯 Lerped Custom Trailing Cursor**: Smooth mouse tracking ring with cursor state detection and interactive hover text.
+- **✨ 3D Tilt & Spotlight Cards**: Interactive 3D perspective rotation on hover with cursor-following radial light spotlights.
+- **📊 Real-time GitHub Activity Tracker**:
+  - Live server-side proxy endpoint (`/api/github-stats` & `/api/github-chart`) fetching exact contribution data for [`wasi-747`](https://github.com/wasi-747).
+  - 365-day interactive activity grid with daily tooltips and Burnt Orange theme color levels.
+- **🖼️ Profile Photo Transition**: Rotating outer dashed frame with watery morphing borders and automatic image carousel.
+- **🛠️ Categorized Skills & AI Integrations**: Dedicated breakdown covering Daily Stack, Comfortable Tech, and AI Agents / Vercel AI SDKs.
+- **📜 Instant Resume Download**: Direct download trigger for PDF resume (`/Wasiur_Rahman_Sakib_Resume_General.pdf`).
+- **🌊 Smooth Inertial Scroll**: Integrated **Lenis** momentum scrolling for smooth anchor navigation.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🛠️ Tech Stack & Dependencies
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://framer-motion.dev/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Smooth Scroll**: [@studio-freight/lenis](https://lenis.darkroom.engineering/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
+- Node.js `>= 18.17.0`
+- npm / pnpm / yarn
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/wasi-747/new-portfolio.git
+   cd new-portfolio
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+4. **Build for Production**:
+   ```bash
+   npm run build
+   npm run start
+   ```
+
+---
+
+## 📬 Contact & Links
+
+- **GitHub**: [@wasi-747](https://github.com/wasi-747)
+- **LinkedIn**: [wasiur-rahman-sakib](https://linkedin.com/in/wasiur-rahman-sakib)
+- **Email**: `wasisakib7846@gmail.com`
+- **Schedule Call**: [Cal.com/wasiur](https://cal.com/wasiur)
+
+---
+
+Developed by **Wasiur Rahman Sakib** © 2026. All Rights Reserved.
