@@ -7,7 +7,6 @@ export default function CustomCursor() {
   const ringRef = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
   const [hovered, setHovered] = useState(false);
-  const [projectHovered, setProjectHovered] = useState(false);
 
   useEffect(() => {
     // Check if pointer is fine (mouse, trackpad) rather than touch
@@ -68,9 +67,6 @@ export default function CustomCursor() {
         "a, button, .tag, .service-card, .card, .accordion-trigger, [role='button'], .project-card, input, select, textarea"
       );
       setHovered(!!isInteractive);
-
-      const isProject = target.closest(".project-card");
-      setProjectHovered(!!isProject);
     };
 
     window.addEventListener("mouseover", onMouseOver);
@@ -106,32 +102,18 @@ export default function CustomCursor() {
       <div
         ref={dotRef}
         className={`fixed w-1.5 h-1.5 rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2 transition-[width,height,background-color] duration-200 ${
-          projectHovered
-            ? "bg-[#ffb347] w-1 h-1"
-            : hovered
-            ? "bg-[#ff8c32] w-1 h-1"
-            : "bg-[#ffb347]"
+          hovered ? "bg-[#ff8c32] w-1 h-1" : "bg-[#ffb347]"
         }`}
       />
       {/* Ring */}
       <div
         ref={ringRef}
         className={`fixed rounded-full border pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transition-[width,height,border-color,background-color] duration-300 ${
-          projectHovered
-            ? "w-16 h-16 border-[#ffb347] bg-[rgba(255,179,71,0.06)]"
-            : hovered
+          hovered
             ? "w-14 h-14 border-[#ffb347] bg-transparent"
             : "w-9 h-9 border-[rgba(255,140,50,0.35)]"
         }`}
-      >
-        {projectHovered && (
-          <span 
-            className="text-[9px] font-heading font-extrabold tracking-widest text-[#ffb347]"
-          >
-            VIEW
-          </span>
-        )}
-      </div>
+      />
     </>
   );
 }
