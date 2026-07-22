@@ -1,76 +1,35 @@
-# 🚀 Wasiur Rahman Sakib — Developer Web Portfolio
+<h1 align="center">Wasiur Rahman Sakib</h1>
 
-A high-performance, responsive personal developer portfolio built with **Next.js 16 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**. Designed with a Figma-inspired dark theme featuring **Burnt Orange (`#ff8c32`)** and **Warm Amber (`#ffb347`)** accents.
+<p align="center">
+  <b>Full-Stack Engineer & Architect · AI Systems Specialist · IoT Telemetry Developer</b>
+</p>
 
-![Portfolio Preview](public/orange_water_splash_circle.png)
+<p align="center">
+  Building high-performance web architectures, IoT telemetry ecosystems, and intelligent AI-integrated applications.
+</p>
 
----
-
-## ✨ Features
-
-- **⚡ Modern Tech Stack**: Next.js 16 App Router, TypeScript, React 19, Tailwind CSS v4, Framer Motion.
-- **🎯 Lerped Custom Trailing Cursor**: Smooth mouse tracking ring with cursor state detection and interactive hover text.
-- **✨ 3D Tilt & Spotlight Cards**: Interactive 3D perspective rotation on hover with cursor-following radial light spotlights.
-- **📊 Real-time GitHub Activity Tracker**:
-  - Live server-side proxy endpoint (`/api/github-stats` & `/api/github-chart`) fetching exact contribution data for [`wasi-747`](https://github.com/wasi-747).
-  - 365-day interactive activity grid with daily tooltips and Burnt Orange theme color levels.
-- **🖼️ Profile Photo Transition**: Rotating outer dashed frame with watery morphing borders and automatic image carousel.
-- **🛠️ Categorized Skills & AI Integrations**: Dedicated breakdown covering Daily Stack, Comfortable Tech, and AI Agents / Vercel AI SDKs.
-- **📜 Instant Resume Download**: Direct download trigger for PDF resume (`/Wasiur_Rahman_Sakib_Resume_General.pdf`).
-- **🌊 Smooth Inertial Scroll**: Integrated **Lenis** momentum scrolling for smooth anchor navigation.
-
----
-
-## 🛠️ Tech Stack & Dependencies
-
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Animations**: [Framer Motion](https://framer-motion.dev/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Smooth Scroll**: [@studio-freight/lenis](https://lenis.darkroom.engineering/)
+<p align="center">
+  <a href="https://github.com/wasi-747">
+    <img src="https://img.shields.io/badge/PORTFOLIO-VISIT-2b2b2b?style=for-the-badge&logo=vercel&logoColor=ff8c32" alt="Portfolio Visit" />
+  </a>
+  <a href="https://linkedin.com/in/wasiur-rahman-sakib">
+    <img src="https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Connect" />
+  </a>
+  <a href="mailto:wasisakib7846@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-CONTACT-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Contact" />
+  </a>
+</p>
 
 ---
 
-## 🚀 Getting Started
+### ⚡ Technical Stack & Core Capabilities
 
-### Prerequisites
-- Node.js `>= 18.17.0`
-- npm / pnpm / yarn
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/wasi-747/new-portfolio.git
-   cd new-portfolio
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-4. **Build for Production**:
-   ```bash
-   npm run build
-   npm run start
-   ```
+- **Frontend & Architectures**: Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, Framer Motion, Lenis.
+- **Backend & IoT Telemetry**: Node.js, Python, PostgreSQL, MongoDB, Redis, WebSockets, Real-time Telemetry.
+- **AI Agents & Workflows**: Vercel AI SDK, LLM Orchestration, Prompt Engineering, Agentic Workflows.
 
 ---
 
-## 📬 Contact & Links
-
-- **GitHub**: [@wasi-747](https://github.com/wasi-747)
-- **LinkedIn**: [wasiur-rahman-sakib](https://linkedin.com/in/wasiur-rahman-sakib)
-- **Email**: `wasisakib7846@gmail.com`
-- **Schedule Call**: [Cal.com/wasiur](https://cal.com/wasiur)
-
----
-
-Developed by **Wasiur Rahman Sakib** © 2026. All Rights Reserved.
+<p align="center">
+  Developed by <b>Wasiur Rahman Sakib</b> © 2026. All Rights Reserved.
+</p>
