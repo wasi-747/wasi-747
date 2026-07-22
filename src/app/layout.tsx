@@ -43,7 +43,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${outfit.variable} ${dancingScript.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[#0a0a0a] text-zinc-100 font-sans">
+      <body className="min-h-full flex flex-col bg-[#070708] text-zinc-100 font-sans relative">
         <CustomCursor />
         <SmoothScroll>{children}</SmoothScroll>
       </body>

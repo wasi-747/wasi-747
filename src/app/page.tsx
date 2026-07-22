@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
+import InteractiveBackground from "@/components/InteractiveBackground";
 import RotatingScrollBadge from "@/components/RotatingScrollBadge";
 import ProfilePhotoTransition from "@/components/ProfilePhotoTransition";
 import AboutMeSection from "@/components/AboutMeSection";
@@ -12,6 +13,7 @@ import Experience from "@/components/Experience";
 import GithubContributions from "@/components/GithubContributions";
 import ProjectsGrid from "@/components/ProjectsGrid";
 import ContactSection from "@/components/ContactSection";
+import SkillsMarquee from "@/components/SkillsMarquee";
 import { ArrowUpRight, Download } from "lucide-react";
 
 export default function Home() {
@@ -22,14 +24,17 @@ export default function Home() {
       <LoadingScreen onComplete={() => setIsLoading(false)} />
 
       {!isLoading && (
-        <div className="relative min-h-screen flex flex-col overflow-hidden bg-[#0a0a0a] text-zinc-100 selection:bg-accent selection:text-zinc-950">
+        <div className="relative min-h-screen flex flex-col overflow-hidden bg-[#070708] text-zinc-100 selection:bg-accent selection:text-zinc-950">
           {/* Navigation */}
           <Navbar />
 
-          {/* Hero Section */}
-          <section className="relative min-h-screen flex items-center justify-center pt-24 px-6 md:px-12 lg:px-24">
-            <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              {/* Left Content (Glint & Ashley inspired) */}
+          {/* Hero Section — 3D Floating Polyhedra Cubes strictly scoped inside this Hero box */}
+          <section className="relative min-h-screen flex items-center justify-center pt-24 px-6 md:px-12 lg:px-24 bg-transparent">
+            {/* 3D Wireframe Floating Cubes (Hero Box Only) */}
+            <InteractiveBackground />
+
+            <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+              {/* Left Content */}
               <div className="lg:col-span-7 flex flex-col gap-8 order-2 lg:order-1">
                 <div className="flex flex-col gap-2">
                   <motion.span
@@ -52,7 +57,7 @@ export default function Home() {
                   </motion.h1>
                 </div>
 
-                {/* Glint-style text block with vertical line */}
+                {/* Vertical accent text block */}
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -81,7 +86,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#projects"
-                    className="flex items-center gap-1.5 bg-zinc-900 border border-zinc-800 hover:border-accent/40 text-white font-heading font-bold text-xs tracking-wider uppercase px-6 py-3.5 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95"
+                    className="flex items-center gap-1.5 bg-zinc-900/80 border border-zinc-800 hover:border-accent/40 text-white font-heading font-bold text-xs tracking-wider uppercase px-6 py-3.5 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 backdrop-blur-sm"
                   >
                     <span>PROJECTS</span>
                     <ArrowUpRight className="w-4 h-4 text-zinc-400 group-hover:text-white" />
@@ -89,7 +94,7 @@ export default function Home() {
                 </motion.div>
               </div>
 
-              {/* Right Content (Noxfolio-inspired Profile Frame) */}
+              {/* Right Content */}
               <div className="lg:col-span-5 flex items-center justify-center order-1 lg:order-2">
                 <motion.div
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -101,29 +106,32 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Floating scroll indicator badge (Ashley inspired) */}
-            <div className="absolute bottom-8 right-8 hidden md:block">
+            {/* Scroll Indicator Badge */}
+            <div className="absolute bottom-8 right-8 hidden md:block z-10">
               <RotatingScrollBadge />
             </div>
           </section>
 
+          {/* Infinite Skills Marquee Ticker */}
+          <SkillsMarquee />
+
           {/* About Section */}
-          <section id="about" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-950 bg-[#0a0a0a]">
-            <div className="w-full max-w-6xl mx-auto">
+          <section id="about" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-900/60 bg-transparent">
+            <div className="w-full max-w-6xl mx-auto relative z-10">
               <AboutMeSection />
             </div>
           </section>
 
           {/* Skills Section */}
-          <section id="skills" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-950 bg-[#080808]">
-            <div className="w-full max-w-6xl mx-auto">
+          <section id="skills" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-900/60 bg-transparent">
+            <div className="w-full max-w-6xl mx-auto relative z-10">
               <SkillsExpertise />
             </div>
           </section>
 
           {/* Experience Section */}
-          <section id="experience" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-950 bg-[#0a0a0a]">
-            <div className="w-full max-w-6xl mx-auto flex flex-col gap-12">
+          <section id="experience" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-900/60 bg-transparent">
+            <div className="w-full max-w-6xl mx-auto flex flex-col gap-12 relative z-10">
               <div className="flex flex-col gap-2">
                 <span className="self-start text-[10px] font-heading font-extrabold tracking-widest text-accent bg-accent/10 px-3 py-1 rounded-full uppercase">
                   Timeline
@@ -139,15 +147,15 @@ export default function Home() {
           </section>
 
           {/* GitHub Contributions Section */}
-          <section id="github" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-950 bg-[#080808]">
-            <div className="w-full max-w-6xl mx-auto">
+          <section id="github" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-900/60 bg-transparent">
+            <div className="w-full max-w-6xl mx-auto relative z-10">
               <GithubContributions />
             </div>
           </section>
 
           {/* Projects Section */}
-          <section id="projects" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-950 bg-[#0a0a0a]">
-            <div className="w-full max-w-6xl mx-auto flex flex-col gap-12">
+          <section id="projects" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-900/60 bg-transparent">
+            <div className="w-full max-w-6xl mx-auto flex flex-col gap-12 relative z-10">
               <div className="flex flex-col gap-2">
                 <span className="text-[10px] font-heading font-extrabold tracking-widest text-accent uppercase">
                   Proof of Work
@@ -163,8 +171,8 @@ export default function Home() {
           </section>
 
           {/* Contact Section */}
-          <section id="contact" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-950 bg-gradient-to-b from-[#0a0a0a] to-[#080808]">
-            <div className="w-full max-w-6xl mx-auto flex flex-col gap-12">
+          <section id="contact" className="py-24 px-6 md:px-12 lg:px-24 border-t border-zinc-900/60 bg-transparent">
+            <div className="w-full max-w-6xl mx-auto flex flex-col gap-12 relative z-10">
               <div className="flex flex-col gap-2">
                 <span className="text-[10px] font-heading font-extrabold tracking-widest text-accent uppercase">
                   Briefing
@@ -179,8 +187,8 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Minimal Footer */}
-          <footer className="border-t border-zinc-950 bg-black py-10 px-6 md:px-12 lg:px-24 text-center">
+          {/* Footer */}
+          <footer className="border-t border-zinc-900/80 bg-black/80 py-10 px-6 md:px-12 lg:px-24 text-center relative z-10">
             <div className="w-full max-w-6xl mx-auto flex items-center justify-center">
               <div className="font-heading font-bold text-xs tracking-wider uppercase text-zinc-500">
                 © {new Date().getFullYear()} WASIUR SAKIB. ALL RIGHTS RESERVED.
