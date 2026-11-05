@@ -4,23 +4,30 @@ import { Briefcase, GraduationCap } from "lucide-react";
 
 const EXPERIENCES = [
   {
+    role: "Junior Software Engineer (Full-Time)",
+    company: "TechDojo Limited",
+    period: "Nov 2026 – Present",
+    type: "job",
+    desc: "Leading core backend microservices, standardizing RESTful API contracts, and optimizing high-concurrency database queries (35% latency reduction).",
+  },
+  {
     role: "Software Engineer Intern",
     company: "TechDojo Limited",
-    period: "2026 – Present",
+    period: "Aug 2026 – Oct 2026",
     type: "job",
-    desc: "Working on enterprise AI agent integrations and real-time backend latency optimizations.",
+    desc: "Architected conversational AI shopping assistant with intelligent query routing and semantic caching layer (40% efficiency boost).",
   },
   {
     role: "Full-Stack Software Architect",
     company: "Independent Contracting / Freelance",
-    period: "2024 – Present",
+    period: "2024 – 2026",
     type: "job",
-    desc: "Designing IoT telemetry hubs, transaction ledger services, and high-performance Web3 solutions.",
+    desc: "Designing IoT telemetry hubs, transaction ledger services with ACID guarantees, and high-performance Web3 solutions.",
   },
   {
     role: "Ecosystem Integrations & APIs",
     company: "AI & Web Developer",
-    period: "2023 – Present",
+    period: "2023 – 2024",
     type: "job",
     desc: "Building autonomous workflows, LLM routing solutions, and embedding-based search tools.",
   },
@@ -29,7 +36,7 @@ const EXPERIENCES = [
     company: "United International University",
     period: "2022 – 2026",
     type: "edu",
-    desc: "Core coursework: Distributed Systems, Database Systems, Software Engineering, and Computer Networks.",
+    desc: "Core coursework: Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Database Systems, and Computer Networks.",
   },
 ];
 

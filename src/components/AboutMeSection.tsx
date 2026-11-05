@@ -36,7 +36,7 @@ export default function AboutMeSection() {
 
         <div className="flex flex-col gap-4 text-sm md:text-base text-zinc-400 font-sans leading-relaxed">
           <p>
-            I'm a <strong className="text-zinc-200">Full-Stack Software Engineer & Architect</strong> with a focus on high-performance web systems, distributed backends, and AI agent workflows. Currently interning at <strong className="text-zinc-200">TechDojo Limited</strong>, I work on enterprise AI integrations and real-time backend latency optimizations.
+            I'm a <strong className="text-zinc-200">Full-Stack Software Engineer & Architect</strong> with a focus on high-performance web systems, distributed backends, and AI agent workflows. Junior Software Engineer at <strong className="text-zinc-200">TechDojo Limited</strong> (promoted from Software Engineer Intern), where I lead core backend microservices and real-time latency optimizations.
           </p>
           <p>
             My engineering scope covers <strong className="text-zinc-200">TypeScript, Node.js, Python, C++, and Go</strong>. I specialize in designing microservices architectures, IoT telemetry ecosystems, database throughput tuning, and agentic LLM routing.
@@ -54,9 +54,9 @@ export default function AboutMeSection() {
               <Briefcase className="w-4 h-4" />
             </div>
             <div>
-              <h4 className="text-xs font-heading font-bold text-white uppercase tracking-wider">TechDojo Intern</h4>
+              <h4 className="text-xs font-heading font-bold text-white uppercase tracking-wider">Junior Software Engineer</h4>
               <p className="text-[10px] text-zinc-500 font-sans mt-0.5 leading-snug">
-                Software Engineer Intern · 2026 – Present
+                TechDojo Limited (Full-Time) · Nov 2026 – Present
               </p>
             </div>
           </TiltCard>
@@ -111,7 +111,7 @@ export default function AboutMeSection() {
                 Wasiur Rahman Sakib is a Full-Stack Software Engineer and Architect specializing in high-performance web systems, distributed databases, IoT telemetry architectures, and AI agent integrations.
               </p>
               <p>
-                He currently pursues his B.Sc. in Computer Science & Engineering at United International University while contributing as a Software Engineer Intern at TechDojo Limited.
+                He currently pursues his B.Sc. in Computer Science & Engineering at United International University while serving as a full-time Junior Software Engineer at TechDojo Limited.
               </p>
             </div>
           )}

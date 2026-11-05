@@ -4,10 +4,10 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ROLES = [
-  "Full-Stack Engineer & Architect",
-  "AI Systems & Workflows Specialist",
-  "IoT Telemetry Developer",
-  "MERN & Python Solutions Architect",
+  "Junior Software Engineer @ TechDojo",
+  "Full-Stack & Distributed Systems Architect",
+  "AI Systems & Telemetry Specialist",
+  "Algorithmic Problem Solver (C++ / Python)",
 ];
 
 export default function RoleRotator() {

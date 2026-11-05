@@ -22,13 +22,13 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Wasiur Rahman Sakib | Full-Stack Software Engineer & Architect",
-  description: "I build high-performance web architectures, IoT telemetry ecosystems, and intelligent AI-integrated applications.",
+  title: "Wasiur Rahman Sakib | Junior Software Engineer & Full-Stack Architect",
+  description: "Junior Software Engineer at TechDojo Limited. Building scalable distributed systems, IoT telemetry ecosystems, and AI-integrated architectures.",
   keywords: ["Software Engineer", "Full-Stack Architect", "AI Agents", "IoT Telemetry", "Next.js", "React", "TypeScript"],
   authors: [{ name: "Wasiur Rahman Sakib" }],
   openGraph: {
-    title: "Wasiur Rahman Sakib | Full-Stack Software Engineer & Architect",
-    description: "I build high-performance web architectures, IoT telemetry ecosystems, and intelligent AI-integrated applications.",
+    title: "Wasiur Rahman Sakib | Junior Software Engineer & Full-Stack Architect",
+    description: "Junior Software Engineer at TechDojo Limited. Building scalable distributed systems, IoT telemetry ecosystems, and AI-integrated architectures.",
     type: "website",
   },
 };

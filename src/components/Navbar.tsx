@@ -62,8 +62,16 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Hire Me CTA */}
-      <div>
+      {/* CTA Buttons */}
+      <div className="flex items-center gap-2.5">
+        <a
+          href="/Wasiur_Rahman_Sakib_Resume_General.pdf"
+          download="Wasiur_Rahman_Sakib_Resume.pdf"
+          target="_blank"
+          className="hidden sm:inline-flex items-center gap-1 border border-zinc-700/80 hover:border-accent text-zinc-300 hover:text-white font-heading font-bold text-xs px-3.5 py-2 rounded-full transition-all duration-200"
+        >
+          <span>CV</span>
+        </a>
         <button
           onClick={() => handleScroll("contact")}
           className="flex items-center gap-1 bg-gradient-to-r from-accent to-accent-warm hover:from-accent-warm hover:to-accent text-zinc-950 font-heading font-bold text-xs px-4 py-2 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-md shadow-orange-950/20 cursor-pointer"

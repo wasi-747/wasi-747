@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasiur Rahman Sakib - Resume</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 0.38in 0.45in;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            color: #1a1a1a;
+            background-color: #ffffff;
+            font-size: 9.2pt;
+            line-height: 1.32;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #0b57d0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            margin-bottom: 8px;
+            border-bottom: 1.5px solid #1e293b;
+            padding-bottom: 6px;
+        }
+
+        .name {
+            font-size: 19pt;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: #0f172a;
+            margin-bottom: 2px;
+        }
+
+        .title {
+            font-size: 10.2pt;
+            font-weight: 600;
+            color: #2563eb;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            font-size: 8.5pt;
+            color: #475569;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+        }
+
+        /* SECTION STYLING */
+        .section {
+            margin-bottom: 7px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 9.8pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.6px;
+            color: #0f172a;
+            border-bottom: 1px solid #cbd5e1;
+            padding-bottom: 2px;
+            margin-bottom: 5px;
+        }
+
+        /* SUMMARY */
+        .summary-text {
+            font-size: 8.9pt;
+            color: #334155;
+            text-align: justify;
+            line-height: 1.34;
+        }
+
+        /* SKILLS TABLE / GRID */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5px;
+            font-size: 8.8pt;
+        }
+
+        .skill-row {
+            display: flex;
+            line-height: 1.3;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            color: #1e293b;
+            min-width: 145px;
+            max-width: 145px;
+        }
+
+        .skill-items {
+            color: #334155;
+            flex: 1;
+        }
+
+        /* EXPERIENCE & PROJECTS */
+        .entry {
+            margin-bottom: 5.5px;
+        }
+
+        .entry:last-child {
+            margin-bottom: 0;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 1.5px;
+        }
+
+        .entry-title {
+            font-size: 9.4pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .entry-title .role {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .entry-location, .entry-date {
+            font-size: 8.5pt;
+            font-weight: 500;
+            color: #64748b;
+        }
+
+        .entry-sub {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 8.7pt;
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 2px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #475569;
+            font-weight: normal;
+        }
+
+        ul.bullets {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.bullets li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 1.8px;
+            font-size: 8.7pt;
+            color: #334155;
+            line-height: 1.28;
+            text-align: justify;
+        }
+
+        ul.bullets li::before {
+            content: "•";
+            position: absolute;
+            left: 2px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* EDUCATION */
+        .edu-entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .edu-school {
+            font-size: 9.3pt;
+            font-weight: 700;
+            color: #0f172a;
+        }
+
+        .edu-degree {
+            font-size: 8.8pt;
+            font-weight: 600;
+            color: #334155;
+        }
+
+        .edu-coursework {
+            font-size: 8.4pt;
+            color: #475569;
+            margin-top: 1px;
+        }
+
+        /* PRINT STYLING */
+        @media print {
+            body {
+                background: none;
+            }
+            .section {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="name">Wasiur Rahman Sakib</h1>
+        <div class="title">Software Engineer · Full-Stack &amp; Systems Architecture</div>
+        <div class="contact-row">
+            <span class="contact-item">📍 Dhaka, Bangladesh</span>
+            <span class="contact-item">✉️ <a href="mailto:wasisakib7846@gmail.com">wasisakib7846@gmail.com</a></span>
+            <span class="contact-item">🌐 <a href="https://wasi-747.vercel.app">wasi-747.vercel.app</a></span>
+            <span class="contact-item">🐙 <a href="https://github.com/wasi-747">github.com/wasi-747</a></span>
+            <span class="contact-item">💼 <a href="https://linkedin.com/in/wasiur-rahman-sakib">linkedin.com/in/wasiur-rahman-sakib</a></span>
+        </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="section">
+        <div class="section-header">Professional Summary</div>
+        <p class="summary-text">
+            Results-driven Software Engineer with proven industry experience architecting scalable distributed systems, real-time telemetry pipelines, and AI-integrated applications. Promoted from Software Engineer Intern to full-time <strong>Junior Software Engineer</strong> at TechDojo Limited within 3 months. Strong algorithmic foundation in data structures, system design, low-latency API engineering, and automated testing. Adept at delivering robust production-grade solutions across complex full-stack ecosystems.
+        </p>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section">
+        <div class="section-header">Technical Skills</div>
+        <div class="skills-grid">
+            <div class="skill-row">
+                <span class="skill-category">Programming Languages:</span>
+                <span class="skill-items">C++, Python, TypeScript, JavaScript (ES6+), SQL, HTML5, CSS3</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Core CS &amp; Algorithms:</span>
+                <span class="skill-items">Data Structures &amp; Algorithms (Graphs, Trees, DP), OOP, Multi-threading &amp; Concurrency, OS &amp; Networks</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Backend &amp; Distributed:</span>
+                <span class="skill-items">Node.js, Express, FastAPI, RESTful APIs, WebSockets (Socket.IO), Redis, Microservices Architecture</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Frontend &amp; UI:</span>
+                <span class="skill-items">React, Next.js, Framer Motion, GSAP, Tailwind CSS v4, Responsive Architecture</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Databases &amp; Caching:</span>
+                <span class="skill-items">MongoDB (Mongoose), PostgreSQL, Redis, Firebase (Firestore, Auth)</span>
+            </div>
+            <div class="skill-row">
+                <span class="skill-category">Tools, DevOps &amp; AI:</span>
+                <span class="skill-items">Git, GitHub Actions, Linux, Docker, Postman, Vercel, LLM Intent Routing, Sentence Transformers</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section class="section">
+        <div class="section-header">Professional Experience</div>
+
+        <!-- TechDojo Limited -->
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">TechDojo Limited</span>
+                <span class="entry-location">Dhaka, Bangladesh</span>
+            </div>
+
+            <!-- Full-time Promotion -->
+            <div class="entry-sub">
+                <span>Junior Software Engineer (Full-Time)</span>
+                <span class="entry-date">Nov 2026 – Present</span>
+            </div>
+            <ul class="bullets">
+                <li>Promoted to full-time Junior Software Engineer following high-velocity delivery and architectural contributions during internship.</li>
+                <li>Spearheading backend service design, standardizing RESTful API contracts, and optimizing database queries for high concurrency.</li>
+                <li>Building asynchronous event processing pipelines and modular microservices with Node.js and TypeScript.</li>
+                <li>Implementing automated integration testing with CI/CD quality gates, reducing production regression risks by 35%.</li>
+            </ul>
+
+            <!-- Internship -->
+            <div class="entry-sub" style="margin-top: 3px;">
+                <span>Software Engineer Intern</span>
+                <span class="entry-date">Aug 2026 – Oct 2026</span>
+            </div>
+            <ul class="bullets">
+                <li>Engineered a full-stack AI-driven conversational e-commerce engine with semantic product recommendation and dynamic checkout.</li>
+                <li>Designed intelligent LLM prompt routing and query caching layer, decreasing latency and improving customer support efficiency by 40%.</li>
+                <li>Integrated React frontend with Node.js/MongoDB services, maintaining rigorous validation schemas and reliable data pipelines.</li>
+            </ul>
+        </div>
+
+        <!-- Independent Contracting -->
+        <div class="entry" style="margin-top: 4px;">
+            <div class="entry-header">
+                <span class="entry-title">Independent Contracting / Freelance</span>
+                <span class="entry-location">Remote</span>
+            </div>
+            <div class="entry-sub">
+                <span>Full-Stack Software Engineer</span>
+                <span class="entry-date">2024 – 2026</span>
+            </div>
+            <ul class="bullets">
+                <li>Architected <em>trustfund-core</em>, a secure fintech P2P platform utilizing MERN stack with strict Role-Based Access Controls (RBAC).</li>
+                <li>Implemented ACID-compliant double-entry ledger structures to enforce financial data integrity with a 100% auditable record trail.</li>
+                <li>Developed <em>Sol Mintx</em>, a decentralized Web3 token portal integrating Solana wallet adapters and SPL token workflows.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- KEY PROJECTS & CONTRIBUTIONS -->
+    <section class="section">
+        <div class="section-header">Key Projects &amp; System Engineering</div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">LifeOS Household — <span class="tagline">IoT Telemetry &amp; Real-Time Monitoring</span></span>
+                <span class="entry-date"><a href="https://github.com/wasi-747/LifeOS_Household">GitHub</a></span>
+            </div>
+            <ul class="bullets">
+                <li>Engineered a lightweight background Python telemetry agent that captures system vitals (CPU, RAM, process threads) and streams metrics in real time via WebSockets (Socket.IO).</li>
+                <li>Developed a high-throughput Express/MongoDB ingestion server and interactive React dashboard featuring real-time device health and audit logs.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">NeuroLink — <span class="tagline">Graph-Based AI Cognitive Architecture</span></span>
+                <span class="entry-date"><a href="https://github.com/wasi-747/NeuroLink">GitHub</a></span>
+            </div>
+            <ul class="bullets">
+                <li>Developed a FastAPI back-end utilizing <code>all-MiniLM-L6-v2</code> embedding pipelines for semantic similarity matching of unstructured text.</li>
+                <li>Implemented Depth-First Search (DFS) graph traversal algorithms across NetworkX directed knowledge graphs to generate adaptive learning paths.</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">RideShare — <span class="tagline">Real-Time Geolocation Transit Engine</span></span>
+                <span class="entry-date"><a href="https://github.com/wasi-747/RideShare">GitHub</a></span>
+            </div>
+            <ul class="bullets">
+                <li>Built a transit web application with real-time GPS coordinate streaming and route computation over WebSockets and Mapbox API.</li>
+                <li>Optimized database connection pooling in serverless environments via persistent <code>global._mongooseCache</code>, eliminating connection spikes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+        <div class="section-header">Education</div>
+        <div class="edu-entry">
+            <div>
+                <span class="edu-school">United International University (UIU)</span> — <span class="edu-degree">B.Sc. in Computer Science &amp; Engineering</span>
+                <div class="edu-coursework">Relevant Coursework: Data Structures &amp; Algorithms, Object-Oriented Programming, Operating Systems, Database Management Systems (DBMS), Computer Networks, System Design.</div>
+            </div>
+            <span class="entry-date">2022 – 2026<br><span style="font-size: 8pt; color: #64748b;">Dhaka, Bangladesh</span></span>
+        </div>
+    </section>
+
+</body>
+</html>

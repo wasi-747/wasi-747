@@ -43,7 +43,7 @@ export default function Home() {
                     transition={{ delay: 0.2, duration: 0.5 }}
                     className="text-xs font-heading font-extrabold tracking-widest text-accent uppercase"
                   >
-                    Full-Stack Engineer & Architect
+                    Junior Software Engineer @ TechDojo Limited
                   </motion.span>
                   
                   <motion.h1
@@ -65,7 +65,7 @@ export default function Home() {
                   className="flex gap-6 border-l-2 border-accent pl-6"
                 >
                   <p className="text-sm md:text-base text-zinc-400 font-sans leading-relaxed max-w-lg">
-                    I build high-performance web architectures, IoT telemetry ecosystems, and intelligent AI-integrated applications. Specializing in scalable web systems, AI agents (workflows, LLM routing), and database throughput optimizations.
+                    Junior Software Engineer at TechDojo Limited. I build high-performance distributed backends, real-time IoT telemetry ecosystems, and AI-integrated architectures. Focused on core CS fundamentals, scalable system design, and algorithmic efficiency.
                   </p>
                 </motion.div>
 
@@ -79,6 +79,7 @@ export default function Home() {
                   <a
                     href="/Wasiur_Rahman_Sakib_Resume_General.pdf"
                     download="Wasiur_Rahman_Sakib_Resume.pdf"
+                    target="_blank"
                     className="flex items-center gap-1.5 bg-gradient-to-r from-accent to-accent-warm hover:from-accent-warm hover:to-accent text-zinc-950 font-heading font-bold text-xs tracking-wider uppercase px-6 py-3.5 rounded-full transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-md shadow-orange-950/20"
                   >
                     <span>DOWNLOAD RESUME</span>
