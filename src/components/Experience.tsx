@@ -18,20 +18,6 @@ const EXPERIENCES = [
     desc: "Architected conversational AI shopping assistant with intelligent query routing and semantic caching layer (40% efficiency boost).",
   },
   {
-    role: "Full-Stack Software Architect",
-    company: "Independent Contracting / Freelance",
-    period: "2024 – 2026",
-    type: "job",
-    desc: "Designing IoT telemetry hubs, transaction ledger services with ACID guarantees, and high-performance Web3 solutions.",
-  },
-  {
-    role: "Ecosystem Integrations & APIs",
-    company: "AI & Web Developer",
-    period: "2023 – 2024",
-    type: "job",
-    desc: "Building autonomous workflows, LLM routing solutions, and embedding-based search tools.",
-  },
-  {
     role: "B.Sc. in Computer Science & Engineering",
     company: "United International University",
     period: "2022 – 2026",

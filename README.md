@@ -32,16 +32,13 @@ Hi! I'm **Wasiur Rahman Sakib**, a **Junior Software Engineer at [TechDojo Limit
 
 I bridge the gap between complex low-latency backend infrastructure and responsive, modern interactive web interfaces. Whether designing multi-threaded IoT data ingestion engines or optimizing database query throughput under load, I focus on algorithmic efficiency, system design rigor, and production reliability.
 
-### 💼 Current & Prior Experience
+### 💼 Work Experience
 - **TechDojo Limited** · *Junior Software Engineer (Full-Time)* `Nov 2026 – Present`
   - Spearheading backend service design, standardizing RESTful API contracts, and optimizing high-concurrency database queries (35% latency reduction).
   - Designing asynchronous message processing workflows and modular microservices with Node.js and TypeScript.
 - **TechDojo Limited** · *Software Engineer Intern* `Aug 2026 – Oct 2026`
   - Engineered conversational AI e-commerce assistant with intent detection, catalog search, and dynamic checkout.
   - Implemented intelligent query routing and semantic caching layer, boosting customer support response efficiency by 40%.
-- **Independent Contracting / Freelance** · *Full-Stack Software Architect* `2024 – 2026`
-  - Engineered fintech P2P lending platform `trustfund-core` with double-entry ledger ACID integrity and strict RBAC.
-  - Developed Solana Web3 token portal `Sol Mintx` integrating wallet adapters and SPL token workflows.
 
 ### 🌟 Core Specializations
 - ⚙️ **Core CS & Algorithms**: Data Structures & Algorithms (Trees, Graphs, DP), Object-Oriented Design (OOP), Multi-threading, OS & Networks.

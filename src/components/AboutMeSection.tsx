@@ -42,7 +42,7 @@ export default function AboutMeSection() {
             My engineering scope covers <strong className="text-zinc-200">TypeScript, Node.js, Python, C++, and Go</strong>. I specialize in designing microservices architectures, IoT telemetry ecosystems, database throughput tuning, and agentic LLM routing.
           </p>
           <p>
-            As an independent contractor, I've engineered Web3 transaction ledger services, real-time IoT hubs, and full-stack web applications for clients globally.
+            I focus on designing robust microservices, real-time IoT telemetry pipelines, database throughput tuning, and agentic AI systems with high performance and reliability.
           </p>
         </div>
 
@@ -64,12 +64,12 @@ export default function AboutMeSection() {
           {/* Card 2 */}
           <TiltCard className="glass-panel p-5 rounded-2xl flex flex-col gap-3 hover:border-accent/30 transition-all duration-300">
             <div className="w-8 h-8 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
-              <Cpu className="w-4 h-4" />
+              <Briefcase className="w-4 h-4" />
             </div>
             <div>
-              <h4 className="text-xs font-heading font-bold text-white uppercase tracking-wider">Software Architect</h4>
+              <h4 className="text-xs font-heading font-bold text-white uppercase tracking-wider">Software Engineer Intern</h4>
               <p className="text-[10px] text-zinc-500 font-sans mt-0.5 leading-snug">
-                Independent Contracting · 2024 – Present
+                TechDojo Limited · Aug 2026 – Oct 2026
               </p>
             </div>
           </TiltCard>
